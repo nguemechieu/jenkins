@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-RUN  apt update && apt upgrade && apt install sudo
+RUN  apt install sudo
+RUN sudo get update
 RUN  sudo apt install  docker
 RUN echo docker pull jenkins/jenkins 
 RUN systemctl start docker
