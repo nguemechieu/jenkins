@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 FROM docker
 
-RUN docker pull jenkins/jenkins 
+RUN echo docker pull jenkins/jenkins 
 
 
-CMD  docker run jenkins/jenkins
+CMD  echo docker run jenkins/jenkins
