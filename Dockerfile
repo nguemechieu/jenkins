@@ -1,6 +1,6 @@
 FROM ubuntu:latest
+FROM docker
 
-RUN   apt install  docker
 RUN echo docker pull jenkins/jenkins 
 RUN systemctl start docker
 EXPOSE 8080
