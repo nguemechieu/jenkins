@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN  apt install docker 
+
 RUN  apt update 
 RUN  apt upgrade 
 RUN apt-get install \
