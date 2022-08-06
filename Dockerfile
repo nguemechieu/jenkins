@@ -1,6 +1,7 @@
 FROM ubuntu:latest
-RUN echo apt install docker 
+FROM docker:latest
+
 RUN echo docker pull jenkins/jenkins 
-CMD  docker run jenkins/jenkins
+CMD echo  docker run jenkins/jenkins
 
 
