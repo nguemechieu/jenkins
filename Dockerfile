@@ -5,6 +5,6 @@ RUN  echo apt-get update
 RUN  echo apt-get upgrade 
 
 RUN echo systemctl --user start docker
-RUN  docker pull jenkins/jenkins 
-CMD docker run jenkins/jenkins
+RUN  echo docker pull jenkins/jenkins 
+CMD  docker run jenkins/jenkins
 
