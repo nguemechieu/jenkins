@@ -7,8 +7,8 @@ RUN apt -y install curl
 RUN  curl -fsSL https://get.docker.com -o get-docker.sh 
 RUN echo get-docker.sh
 
-RUN systemctl --user start docker
+RUN 
 RUN  docker pull jenkins/jenkins 
 CMD  docker run jenkins/jenkins
-EXPOSE 4050
+EXPOSE 8080:80
 
