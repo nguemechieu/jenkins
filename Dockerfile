@@ -5,7 +5,6 @@ RUN  apt-get update
 RUN  apt-get upgrade 
 RUN  apt-get install docker
 RUN echo systemctl --user start docker
-
 RUN  docker pull jenkins/jenkins 
 CMD docker run jenkins/jenkins
 
