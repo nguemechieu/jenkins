@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-RUN  apt install gnome-terminal 
 RUN  apt install docker 
 RUN  apt update 
 RUN  apt upgrade 
