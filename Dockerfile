@@ -1,11 +1,12 @@
 FROM ubuntu:latest
 
-RUN  apt-get update 
-RUN  apt-get upgrade  -y
-RUN apt -y install curl
-RUN 
-RUN  apt install apt-utils 
 
+
+RUN apt -y install curl
+
+RUN  apt install apt-utils 
+RUN  apt-get upgrade
+RUN  apt-get update 
 RUN  curl -fsSL https://get.docker.com -o get-docker.sh 
 RUN echo get-docker.sh
 
