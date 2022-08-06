@@ -1,9 +1,6 @@
 FROM ubuntu:latest
+FROM docker:latest 
+RUN  docker pull jenkins/jenkins 
+CMD docker run jenkins/jenkins
 
-
-RUN apt install docker 
-RUN echo docker pull jenkins/jenkins 
-
-CMD  docker run jenkins/jenkins
-EXPOSE 8080\tcp
 
