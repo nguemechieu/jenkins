@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 
 RUN  apt update 
-RUN  apt upgrade  y n | <[y/n]> "y" 
+RUN  apt upgrade 
+RUN  echo  "y" 
 RUN apt-get install \
     ca-certificates \
     curl \
