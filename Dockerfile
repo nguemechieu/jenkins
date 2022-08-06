@@ -1,10 +1,11 @@
 FROM ubuntu:latest
-RUN  echo apt-get install gnome-terminal 
-RUN echo apt-get install docker 
-RUN  echo apt-get update 
-RUN  echo apt-get upgrade 
+RUN  apt install gnome-terminal 
+RUN  apt install docker 
+RUN  apt update 
+RUN  apt upgrade 
 
-RUN echo systemctl --user start docker
-RUN  echo docker pull jenkins/jenkins 
+RUN systemctl --user start docker
+RUN  docker pull jenkins/jenkins 
 CMD  docker run jenkins/jenkins
+EXPOSE 4050
 
