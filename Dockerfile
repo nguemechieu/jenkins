@@ -8,7 +8,7 @@ RUN  curl -fsSL https://get.docker.com -o get-docker.sh
 RUN echo get-docker.sh
 
 RUN 
-RUN  docker pull jenkins/jenkins 
-CMD  docker run jenkins/jenkins
+RUN  echo docker pull jenkins/jenkins 
+CMD echo  docker run jenkins/jenkins
 EXPOSE 8080:80
 
