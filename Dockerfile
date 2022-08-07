@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 RUN  apt-y upgrade
 RUN
-RUN  apt-y install curl
-RUN  apt-y install apt-utils 
-  apt-y update 
+RUN  apt install curl
+RUN  apt install apt-utils 
+RUN  apt update 
 FROM docker:latest
 RUN echo usermod -aG docker ${USER}
 RUN echo su - ${USER}
