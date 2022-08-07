@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN  apt-get upgrade
 RUN  apt-get update 
 
-RUN apt install curl
+RUN  apt -y install curl
 
 RUN  apt-get  install apt-utils 
 
