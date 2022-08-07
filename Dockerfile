@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN  apt-y upgrade
 RUN
-RUN  apt -y install curl
+RUN  apt-y install curl
 RUN  apt-y install apt-utils 
   apt-y update 
 FROM docker:latest
