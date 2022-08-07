@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN  apt-y upgrade
+RUN  apt upgrade
 RUN
 RUN  apt install curl
 RUN  apt install apt-utils 
