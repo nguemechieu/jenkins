@@ -9,7 +9,7 @@ FROM docker:latest
 RUN echo usermod -aG docker ${USER}
 RUN echo su - ${USER}
 RUN echo systemctl start docker
-RUN docker pull jenkins/jenkins 
-RUN docker run jenkins/jenkins
+RUN echo docker pull jenkins/jenkins 
+RUN echo docker run jenkins/jenkins
 EXPOSE 8080
 
