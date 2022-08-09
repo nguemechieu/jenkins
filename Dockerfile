@@ -11,7 +11,7 @@ RUN mkdir /jenkingserverrunner \
   && apt-get update \
   && apt-get clean \
   && useradd -u 1000 -G sudo -U -m -s /bin/bash myuser \
-  && chown ftuser:ftuser /freqtrade \
+  && chown myuser:myuser /freqtrade \
   # Allow sudoers
   && echo "myuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
 
