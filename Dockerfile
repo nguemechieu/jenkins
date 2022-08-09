@@ -13,10 +13,10 @@ RUN 	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/
 RUN echo systemctl status docker
 
 RUN echo apt-get install -y docker-ce
-RUN  usermod -aG docker ${USER}
-RUN su - ${USER}
-RUN  systemctl start docker
-RUN docker pull jenkins/jenkins 
+RUN  echo usermod -aG docker ${USER}
+RUN echo su - ${USER}
+RUN echo systemctl start docker
+RUN echo docker pull jenkins/jenkins 
 
 CMD  docker run jenkins/jenkins
 EXPOSE 8080:80
