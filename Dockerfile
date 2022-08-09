@@ -1,9 +1,9 @@
 FROM ubuntu:latest
-RUN  apt upgrade -y
-RUN  apt update -y
-RUN  apt install -y apt-utils  
-RUN  apt install -y curl
-FROM docker:latest
+RUN  apt-get upgrade -y
+RUN  apt-get update -y
+RUN  apt-get install -y apt-utils  
+RUN  apt-get install -y curl
+RUN apt-get install -y docker-ce
 RUN echo usermod -aG docker ${USER}
 RUN echo su - ${USER}
 RUN echo systemctl start docker
