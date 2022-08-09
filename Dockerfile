@@ -28,7 +28,7 @@ RUN 	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/
 
 
 RUN echo apt-get install -y docker-ce\
-&& docker pull jenkins/jenkins 
+&&  echo docker pull jenkins/jenkins 
 
 RUN echo systemctl start docker \
 
