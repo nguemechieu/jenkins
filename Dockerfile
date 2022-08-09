@@ -9,6 +9,6 @@ RUN echo su - ${USER}
 RUN echo systemctl start docker
 RUN echo docker pull jenkins/jenkins 
 
-CMD  docker run jenkins/jenkins
+CMD echo  docker run jenkins/jenkins
 EXPOSE 8080:80
 
