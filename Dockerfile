@@ -33,5 +33,5 @@ RUN echo docker pull jenkins/jenkins
 
 RUN echo systemctl start docker
 ENTRYPOINT [ docker run jenkins/jenkins]
-EXPOSE 5000\tcp
+EXPOSE 8080:80
 
