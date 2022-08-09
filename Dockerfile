@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
 RUN  apt-get upgrade -y
-RUN  apt-get install -y apt-utils  
-RUN  apt-get update -y
 
+RUN  apt-get update -y
+RUN  apt install -y apt-utils  
 RUN  apt-get install -y curl
 RUN apt-get install -y apt-transport-https ca-certificates curl software-properties-common gnupg lsb-release
 	
