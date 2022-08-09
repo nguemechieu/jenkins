@@ -31,6 +31,7 @@ RUN echo apt-get install -y docker-ce\
 &&  echo docker pull jenkins/jenkins 
 
 RUN echo systemctl start docker 
-ENTRYPOINT [ docker run jenkins/jenkins]
+RUN echo docker run jenkins/jenkins
+
 EXPOSE 8080:80
 
