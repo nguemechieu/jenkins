@@ -28,10 +28,12 @@ RUN 	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/
 
 
 RUN echo apt-get install -y docker-ce\
-&&  echo docker pull jenkins/jenkins 
+RUN  echo docker pull jenkins/jenkins 
 
 RUN echo systemctl start docker 
-RUN echo docker run jenkins/jenkins
+RUN echo systemctl  docker status 
+
+CMD [ " echo docker run", "jenkins/jenkins"]
 
 EXPOSE 8080:80
 
