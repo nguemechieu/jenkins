@@ -5,6 +5,9 @@ ENV LC_ALL C.UTF-8
 
 ENV PATH=/home/myuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
+# Metadata indicating an image maintainer.
+LABEL maintainer="nguemechieu@live.com"
+LABEL key="4205485"
 
 # Prepare environment
 RUN mkdir /jenkingserverrunner \
