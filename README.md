@@ -1,9 +1,13 @@
 # jenkins_server_runner
-running a Jenkins server independently
+ running a Jenkins server independently with latest version
 
-## command 
-    docker pull bigbossmanager/jenkinsserverrunner:latest
+ ## commands 
+ 
+      - docker pull bigbossmanager/jenkinsserverrunner:latest
+    
+   
+      - docker run bigbossmanager/jenkinsserverrunner
     
     
-    docker run bigbossmanager/jenkinsserverrunner
-    
+  # SERVER RUNNING ON PORT 8080
+  #[LINK] http://localhost:8080
