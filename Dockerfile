@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.361.1-jdk11
+FROM jenkins/jenkins:latest
 USER root
 RUN apt-get update && apt-get install -y lsb-release
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
@@ -10,5 +10,5 @@ RUN echo "deb [arch=$(dpkg --print-architecture) \
 RUN apt-get update && apt-get install -y docker-ce-cli
 USER jenkins
 RUN jenkins-plugin-cli --plugins "blueocean:1.25.8 docker-workflow:521.v1a_a_dd2073b_2e"
-EXPOSE 5000
-RUN echo "server running on port 5000"
+EXPOSE 8080
+RUN echo "server running on port 8080"
