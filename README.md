@@ -2,7 +2,7 @@
  
  Running  Jenkins server independently with latest version
 
- ## commands: 
+ ## Commands: 
  
       - docker pull bigbossmanager/jenkinsserverrunner:latest
     
