@@ -4,10 +4,10 @@
 
  ## Commands: 
  
-      - docker pull bigbossmanager/jenkinsserverrunner:latest
+      - docker pull bigbossmanager/jenkins:latest
     
    
-      - docker run bigbossmanager/jenkinsserverrunner
+      - docker run bigbossmanager/jenkins
     
     
   #Jenkins Server is running on port 8080
