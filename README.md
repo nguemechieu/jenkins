@@ -10,10 +10,10 @@
       - docker run bigbossmanager/jenkinsserverrunner
     
     
-  # SERVER RUNNING ON PORT 25050
-  # [!LINK] http://localhost:25050
+  #Jenkins Server is running on port 25050
+  # [link] http://localhost:25050
   
-  # PAGE
+  # Page Overview
   
   ![Screenshot 2022-10-22 at 5 08 54 PM](JENKINS.png)
 
