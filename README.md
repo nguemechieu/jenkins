@@ -10,8 +10,8 @@
       - docker run bigbossmanager/jenkinsserverrunner
     
     
-  # SERVER RUNNING ON PORT 8080
-  # [LINK] http://localhost:8080
+  # SERVER RUNNING ON PORT 25050
+  # [LINK] http://localhost:25050
   
   # PAGE
   
