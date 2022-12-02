@@ -10,8 +10,8 @@
       - docker run bigbossmanager/jenkinsserverrunner
     
     
-  #Jenkins Server is running on port 25050
-  # [link] http://localhost:25050
+  #Jenkins Server is running on port 8080
+  # [link] http://localhost:8080
   
   # Page Overview
   
