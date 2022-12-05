@@ -4,10 +4,7 @@
 
  ## Commands: 
  
-      - docker pull bigbossmanager/jenkins:latest
-    
-   
-      - docker run bigbossmanager/jenkins
+      - docker pull ghcr.io/nguemechieu/jenkins:nightly
     
     
   #Jenkins Server is running on port 8080
