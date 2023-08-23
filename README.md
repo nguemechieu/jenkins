@@ -3,8 +3,11 @@
  Running  Jenkins server independently with latest version
 
  ## Commands: 
- 
-      - docker pull ghcr.io/nguemechieu/jenkins:nightly
+  * PULL
+     - docker pull ghcr.io/nguemechieu/jenkins:nightly
+
+  * RUN [ commands to execute Jenkins]
+    - docker run ghcr.io/nguemecise/jenkins:nightly
     
     
   #Jenkins Server is running on port 8080
@@ -16,6 +19,10 @@
    
    
    ![Screenshot 2022-10-22 at 5 08 54 PM](jenkins.png)
+
+   ![Screenshot BUS INTERFACE](
+    http://localhost:8080/jenkins/src/images/jenkins.png
+   )
 
 
 
