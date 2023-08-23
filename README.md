@@ -4,9 +4,11 @@
 
  ## Commands: 
   * PULL
+
      -    docker pull ghcr.io/nguemechieu/jenkins:nightly
 
-  * RUN [ commands to execute Jenkins]
+  * RUN   commands to execute Jenkins
+
      -    docker run ghcr.io/nguemecise/jenkins:nightly
     
     
