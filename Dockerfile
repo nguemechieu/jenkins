@@ -13,4 +13,4 @@ USER jenkins
 EXPOSE 8080
 RUN jenkins-plugin-cli --plugins "blueocean:latest docker-workflow:521.v1a_a_dd2073b_2e"
 
-RUN echo "Server is running on port 80"
+RUN echo "Server is running on port 8080"
