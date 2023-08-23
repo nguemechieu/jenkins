@@ -18,6 +18,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
+  
   # github.repository as <account>/<repo>
   IMAGE_NAME: Jenkins
 
@@ -57,8 +58,8 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ env.USERNAME }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: bigbossmanager
+          password: ${{ Bigboss307#}}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
