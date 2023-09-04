@@ -21,16 +21,23 @@ RUN echo "deb [arch=$(dpkg --print-architecture) \
 RUN apt-get update && apt-get install -y docker-ce-cli
 
 # Switch back to the Jenkins user
-USER jenkins
+USER jenkins 
+# Use the latest Jenkins image as the base
 
-# Expose Jenkins web UI on port 8080
-EXPOSE 8080
+# Copy the jenkins.sh script into the container
+COPY jenkins.sh /usr/local/bin/
+
+
 
 # Install Jenkins plugins (blueocean and docker-workflow)
 RUN jenkins-plugin-cli --plugins "blueocean:latest docker-workflow:521.v1a_a_dd2073b_2e"
 
 # Print a message indicating that the server is running on port 8080
 RUN echo "Server is running on port 8080"
+# Ensure the script is executable
+RUN chmod +x /usr/local/bin/jenkins.sh
 
+# Expose Jenkins web UI on port 8080
+EXPOSE 8080
 # Specify the CMD to start the Jenkins service
 CMD ["/usr/local/bin/jenkins.sh"]
